@@ -1,0 +1,36 @@
+Лабораторная работа 1
+вариант 4
+задание общее:
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexMatches {
+
+public static void main(String args[]) {
+String str = "";
+String pattern = "[abcdefghijklmnopqrstuv5320736]{29}";
+
+Pattern r = Pattern.compile(pattern);
+Matcher m = r.matcher(str);
+System.out.println(m.matches());
+}
+
+}
+ 
+Индивидуальное задание:
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class Lab1 {
+
+public static void main(String args[]) {
+String str = "#FFFFFF";
+String pattern = "#[0-9a-fA-F]{6}";
+
+Pattern r = Pattern.compile(pattern);
+Matcher m = r.matcher(str);
+System.out.println(m.matches());
+}
+
+} 
